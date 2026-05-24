@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>Site pentru salonul Zuzu</title>
+    <meta name="description"
+        content="Salonul Zuzu ofera servicii diverse de cosmentica, realizate de cei mai buni experti, la preturi atractive.">
+    <meta name="keywords"
+        content="Zuzu, par, unghii, Bucuresti, Sector 1, salon, cosmetica,par, unghii, manichiura, vopsit, tratamente faciale, ieftin, profesionist">
+    
+    <%- include('../fragmente/head.ejs') %>
+
+</head>
+
+<body>
+    <%- include('../fragmente/header.ejs') %>
+    <main> <!--  comentariu -->
+        <div id="grid-pagina">
+
+            <section id="welcome">
+                <hgroup>
+                    <h2>Bine ati venit</h2>
+                    <p class="subtitlu">Prezentarea salonului</p>
+                </hgroup>
+
+                <p class="intro">Vă mulțumim că ne vizitați site-ul. Va asteptam cu drag!</p>
+
+                <div class="intro-oferte"></div>
+                <div>Servicii pentru par</div>
+                <div>Servicii mani/pedi</div>
+                <div>Servicii cosmetica</div>
+                <p class="anunt intro">Va asteptam la salonul nostru pentru a pleca cu increderea ridicata!!!</p>
+                <div id="dv-prezentare-1">
+                    <div id="dv-prezentare">
+                        <picture>
+                            <!-- il ia pe primul care se potriveste cu query-ul din media-->
+                            <source srcset="/resurse/imagini/salonext_mic.png" media="(max-width:700px)" />
+                            <source srcset="/resurse/imagini/salonext_mediu.png" media="(max-width:1200px)" />
+                            <img style="width: 90%" src="/resurse/imagini/salonext_mare.png" alt="text" />
+                        </picture>
+                    </div>
+                </div>
+                <hr class="salon" />
+                <div id="container-video">
+                    <img style="width:44%" class="salon" src="/resurse/imagini/SalonZuzu.png" alt="salon"
+                        title="Salonul Zuzu">
+                    <div id="centrare-video">
+                        <div id="clip-video">
+                            <div id="stil-video">
+                                <video width="320" height="240" playsinline autoplay loop muted>
+                                    <source src="/resurse/video/Chocolate.mp4" type="video/mp4">
+                                    <source src="/resurse/video/Chocolate.ogv" type="video/ogv">
+                                    <track default
+                                        src="data:image/png;base64, V0VCVlRUIC0gQ2lvY29sYXTEgwoKMDA6MDAuMDAwIC0tPiAwMDowMy4wMDAgbGluZTowCkNpb2NvbGF0xIMhISEKCjAwOjAzLjAwMCAtLT4gMDA6MDcuMDAwIGxpbmU6MApNdWx0xIMgY2lvY29sYXTEgyEhISEKCjAwOjA5LjAwMCAtLT4gMDA6MTQuMDAwIGxpbmU6MApVcHMsIGFtIG11cmTEg3JpdCBtYXNhIQoKMDA6MTQuNTAwIC0tPiAwMDoxOS4wMDAgbGluZTowCk51IGNvbnRlYXrEgyEgQ2lvY29sYXTEg8SDxIPEg8SDxIMhCgo="
+                                        kind="captions" srclang="ro" label="romana">
+                                    <track
+                                        src="data:image/png;base64, V0VCVlRUIC0gQ2hvY29sYXRlDQoNCjAwOjAwLjAwMCAtLT4gMDA6MDMuMDAwDQpDaG9jb2xhdGUhISENCg0KMDA6MDMuMDAwIC0tPiAwMDowNy4wMDANCkxvdHMgb2YgY2hvY29sYXRlISEhIQ0KDQowMDowOS4wMDAgLS0+IDAwOjE0LjAwMA0KT3VwcywgdGFibGUgZ290IGRpcnR5IQ0KDQowMDoxNC41MDAgLS0+IDAwOjE5LjAwMA0KRG9lc24ndCBtYXR0ZXIhIENob2NvbGF0ZSEhIQ0KDQo="
+                                        kind="captions" srclang="en" label="engleza">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="promotii">
+                <h2>Promoții și oferte</h2>
+                <article>
+                    <h3 class="titlu">Super ofertă de weekend</h3>
+                    <p><b>Salonul Zuzu</b> oferă <b>reduceri de <s>10%</s> <ins>15%</ins></b> pentru toate serviciile de
+                        decolorare in fiecare weekend!</p>
+                    <p>Oferta este valabilă in limita locurilor disponibile la salonul <abbr
+                            title="Salonul Zuzu">Zuz</abbr>.</p>
+                    <p>Gradul de ocupare pentru acest weekend (<time datetime="2026-03-13">13 martie 2026</time> - <time
+                            datetime="2026-03-15">15 martie 2026</time>)</p>
+                    <meter value="110" min="0" max="120" low="30" high="100" optimum="80"></meter>
+                    <p>Au mai ramas putine locuri încă disponibile.</p>
+                </article>
+                <article>
+                    <h3>Ofertă pachet</h3>
+                    <p>Salonul Zuzu oferă pachete cuprinzând:</p>
+                    <ol>
+                        <li>Tuns</li>
+                        <li>Stilizat</li>
+                        <li>Redus 20%: un sampon marca proprie Zuzu</li>
+                    </ol>
+                    <ol>
+                        <li>Tuns</li>
+                        <li>Decolorat</li>
+                        <li>Vopsit</li>
+                        <li>O sedinta gratis de intretinere a culorii!</li>
+                    </ol>
+
+                </article>
+                <article>
+                    <h3>Promoție pentru tratamente faciale</h3>
+                    <p>În această perioadă, <b>Salonul Zuzu</b> oferă o reducere specială pentru tratamentele faciale.
+                    </p>
+                    <p>Beneficiați de <b>10% reducere</b> pentru următoarele servicii:</p>
+                    <ol>
+                        <li>Hydrafacial</li>
+                        <li>Peeling carbon</li>
+                        <li>Curățare facială profesională</li>
+                        <li>Tratament LED pentru revitalizarea tenului</li>
+                    </ol>
+                    <p>Promoția este valabilă până la sfârșitul lunii martie, în limita locurilor disponibile.</p>
+                    <p>Gradul de ocupare al acestei promotii:</p>
+                    <meter value="150" min="0" max="288" low="50" high="250" optimum="180"></meter>
+                    <p>Locuri inca disponibile</p>
+                </article>
+                <article>
+                    <h3>Pachet special pentru îngrijirea completă</h3>
+                    <p>Pentru clienții care își doresc o experiență completă de relaxare, am pregătit un pachet special.
+                    </p>
+                    <p>Pachetul include:</p>
+                    <ol>
+                        <li>Tuns și stilizare profesională</li>
+                        <li>Manichiură cu gel</li>
+                        <li>Tratament de hidratare pentru păr</li>
+                        <li>Masaj relaxant al scalpului</li>
+                    </ol>
+                    <p>Clienții care aleg acest pachet beneficiază de o reducere de <b>25%</b> față de prețul
+                        serviciilor individuale.</p>
+                </article>
+            </section>
+            <section id="produse">
+                <h2>Serviciile noastre</h2>
+                <section>
+                    <h3>Pentru par</h3>
+                    <p>Puteti alege dintre</p>
+                    <ul>
+                        <li>stilizat</li>
+                        <li>tuns (include spalat)</li>
+                        <li>decolorare</li>
+                        <li>vopsire</li>
+                        <li>extensii</li>
+                        <li>permanente</li>
+                        <li>servicii par cret</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Pentru unghii</h3>
+                    <p>Manichiura</p>
+                    <ul>
+                        <li>manichiura slim</li>
+                        <li>manichiura cu gel</li>
+                        <li>constructie gel</li>
+                        <li>manichiura cu semi</li>
+                        <li>semi/gel cu apex</li>
+                        <li>indreptareunghii</li>
+                    </ul>
+                    <p>Pedichiura</p>
+                    <ul>
+                        <li>pedichiura cu oja</li>
+                        <li>pedichiura cu semi</li>
+                        <li>pedichiura cu gel</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Tratamente cosmetice</h3>
+                    <p>Pentru tenul dumneavoastra va oferim:</p>
+                    <ul>
+                        <li>Hydrafacial</li>
+                        <li>Peeling carbon</li>
+                        <li>Radiofrecventa</li>
+                        <li>Curatare faciala</li>
+                        <li>Tratament LED</li>
+                    </ul>
+                </section>
+            </section>
+            <section id="orar">
+                <h2>Orele la care suntem deschisi!</h2>
+                <table id="tab-orar">
+                    <caption>Programul salonului Zuzu</caption>
+                    <thead>
+
+                        <tr>
+                            <th>Cod</th>
+                            <th>Perioadă</th>
+                            <th>Zi</th>
+                            <th>Interval dimineata</th>
+                            <th>Pauza de masa</th>
+                            <th>Interval seară</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td rowspan="5" class="exceptie-tabel">Zile<br />Lucrătoare</td>
+                            <td>Luni</td>
+                            <td>9-12</td>
+                            <td>12-14</td>
+                            <td>14-19</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+
+                            <td>Marti</td>
+                            <td>9-12</td>
+                            <td>12-14</td>
+                            <td>14-19</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+
+                            <td>Miercuri</td>
+                            <td>9-11</td>
+                            <td>11-13</td>
+                            <td>14-19</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+
+                            <td>Joi</td>
+                            <td>9-11</td>
+                            <td>11-13</td>
+                            <td>14-20</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+
+                            <td>Vineri</td>
+                            <td>10-12</td>
+                            <td>12-14</td>
+                            <td>14-19</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td rowspan="2" class="exceptie-tabel">Weekend</td>
+                            <td>Sambata</td>
+                            <td>10-12</td>
+                            <td>12-13</td>
+                            <td>13-17</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Duminica</td>
+                            <td>inchis</td>
+                            <td>-</td>
+                            <td>inchis</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Închis cu ocazia sărbătorilor legale, sau, când ne e mai lene așa.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <figure id="fig1" class="fg-img">
+                <img style="width: 60%" src="/resurse/imagini/ustensile.png" alt="briose">
+                <figcaption>Tuns</figcaption>
+            </figure>
+            <figure id="fig2" class="fg-img">
+                <img style="width:60%" src="/resurse/imagini/ustensile2.png" alt="briose">
+                <figcaption>Unghii</figcaption>
+            </figure>
+            <figure id="fig3" class="fg-img">
+                <img style="width:60%" src="/resurse/imagini/ustensile3.png" alt="briose">
+                <figcaption>Ten</figcaption>
+            </figure>
+            <section id="anunturi">
+                <h2 class="fg-img">Anunțuri</h2>
+                <p>
+                    <time datetime="2026-03-01">1 martie 2026</time>
+                    Am lansat noul serviciu de <b>tratament Hydrafacial</b> pentru o piele mai curată și hidratată.
+                </p>
+                <p>
+                    <time datetime="2026-02-20">20 februarie 2026</time>
+                    <strong>Promoție specială!</strong> Reducere de 15% pentru serviciile de vopsire în fiecare weekend.
+                </p>
+                <p>
+                    <time datetime="2026-02-10">10 februarie 2026</time>
+                    Am adăugat produse profesionale noi pentru îngrijirea părului în salonul nostru.
+                </p>
+                <p>
+                    <time datetime="2026-01-25">25 ianuarie 2026</time>
+                    Echipa Salonului Zuzu s-a mărit! O nouă specialistă în manichiură și pedichiură s-a alăturat echipei
+                    noastre.
+                </p>
+                <p>
+                    <time datetime="2026-01-10">10 ianuarie 2026</time>
+                    Începând cu această lună oferim consultații gratuite pentru alegerea culorii potrivite de păr.
+                </p>
+                <p>
+                    <time datetime="2025-12-20">20 decembrie 2025</time>
+                    Salonul Zuzu vă urează <em>Sărbători fericite</em> și vă așteaptă cu programări pentru perioada
+                    festivă.
+                </p>
+                <p>
+                    <time datetime="2025-11-15">15 noiembrie 2025</time>
+                    Am introdus un nou tratament cu <i>keratină</i> pentru regenerarea părului deteriorat.
+                </p>
+                <p>
+                    <time datetime="2025-10-30">30 octombrie 2025</time>
+                    Mulțumim tuturor clienților care ne-au vizitat în această lună! Așteptăm cu drag și noi programări.
+                </p>
+            </section>
+            <section id="index-intrebari">
+                <h2>Întrebări frecvente</h2>
+
+                <details>
+                    <summary>Produsele dumneavoastră pot provoca reacții alergice?</summary>
+                    <p>În cazuri rare pot apărea reacții alergice. De aceea recomandăm să discutați cu specialistul
+                        înainte de serviciu pentru a verifica ingredientele produselor folosite.</p>
+                </details>
+
+                <details>
+                    <summary>Dacă nu sunt mulțumită de rezultat, pot reveni pentru corectare?</summary>
+                    <p>Desigur! Dacă rezultatul nu este cel dorit, vă rugăm să ne contactați în termen de 48 de ore
+                        pentru o corectare gratuită.</p>
+                </details>
+
+                <details>
+                    <summary>Este necesară programarea înainte de a veni la salon?</summary>
+                    <p>Recomandăm programarea în avans pentru a vă asigura că există loc disponibil la specialistul
+                        dorit.</p>
+                </details>
+
+                <details>
+                    <summary>Cât durează în medie o programare pentru vopsirea părului?</summary>
+                    <p>Durata depinde de tipul serviciului, dar în general vopsirea și stilizarea părului durează între
+                        2 și 3 ore.</p>
+                </details>
+
+                <details>
+                    <summary>Ce produse folosiți pentru tratamentele cosmetice?</summary>
+                    <p>Folosim produse profesionale de calitate, testate dermatologic, pentru a asigura rezultate bune
+                        și siguranță pentru clienții noștri.</p>
+                </details>
+
+                <details>
+                    <summary>Pot veni fără programare dacă doresc doar o manichiură rapidă?</summary>
+                    <p>Este posibil, dar depinde de disponibilitatea specialiștilor. Pentru a evita așteptarea,
+                        recomandăm programarea în prealabil.</p>
+                </details>
+
+                <details>
+                    <summary>Salonul oferă și consultații pentru alegerea culorii de păr?</summary>
+                    <p>Da, specialiștii noștri oferă consultații pentru a vă ajuta să alegeți culoarea și stilul
+                        potrivit pentru tipul dumneavoastră de păr.</p>
+                </details>
+            </section>
+        </div>
+        <section id="galerie-statica">
+            <h2>Galerie</h2>
+            <div id="grid-galerie">
+                <figure>
+                    <div>
+                        <img style="width:30%" src="/resurse/imagini/blond.png" alt="par">
+                    </div>
+
+                    <figcaption>Decolorare</figcaption>
+                </figure>
+                <figure>
+                    <img style="width:40%" src="/resurse/imagini/colorat.png" alt="par">
+                    <figcaption>Vopsire</figcaption>
+                </figure>
+                <figure>
+                    <img style="width:40%" src="/resurse/imagini/coafat.png" alt="par">
+                    <figcaption>Coafat</figcaption>
+                </figure>
+                <figure>
+                    <img style="width:40%" src="/resurse/imagini/unghii.png" alt="unghii">
+                    <figcaption>Manichiura</figcaption>
+                </figure>
+                <figure>
+                    <img style="width:50%" src="/resurse/imagini/pedi.png" alt="unghii">
+                    <figcaption>Pedichiura</figcaption>
+                </figure>
+                <figure>
+                    <img style="width:45%" src="/resurse/imagini/facial.png" alt="ten">
+                    <figcaption>Tratament</figcaption>
+                </figure>
+                <figure>
+                    <img style="width:45%" src="/resurse/imagini/beforeandafter.png" alt="ten">
+                    <figcaption>Before and After</figcaption>
+                </figure>
+
+            </div>
+        </section>
+        <section id="tutoriale">
+            <h2>Sfaturi si tutoriale beauty</h2>
+            <p>Dacă doriți să aflați mai multe despre îngrijirea părului, a tenului sau a unghiilor, am selectat câteva
+                videoclipuri utile si usor de urmat.
+                Specialiștii recomandă aceste tehnici pentru a menține un aspect sănătos
+                și îngrijit între vizitele la salon.</p>
+            <div class="container-iframe">
+                <div class="taburi-iframe">
+                    <a href="https://www.youtube.com/embed/3JuDaAOt5nk?si=a1Ve4sHjsCM9jvlL" target="ifr-video">Cum sa
+                        iti ingrijesti parul vopsit acasa</a>
+                    <a href="https://www.youtube.com/embed/DxPf1ElX5Cc?si=A_HbHJ_3I8rQ9PG7" target="ifr-video">Cum sa
+                        iti ingrijesti manichiura</a>
+                    <a href="https://www.youtube.com/embed/RD21wzI5Y6w?si=0ejJLQh9kkIxC1v5" target="ifr-video">Cum sa
+                        iti ingrijesti tenul</a><br />
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3JuDaAOt5nk?si=a1Ve4sHjsCM9jvlL"
+                    name="ifr-video" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+            </div>
+        </section>
+
+    </main>
+    <%- include('../fragmente/footer.ejs') %>
+</body>
+
+</html>

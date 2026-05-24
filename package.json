@@ -1,0 +1,22 @@
+{
+  "name": "zuzu",
+  "version": "1.0.0",
+  "description": "salonul zuzu",
+  "keywords": [
+    "salon",
+    "unghii",
+    "par"
+  ],
+  "license": "ISC",
+  "author": "Laura Visan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "sass": "^1.100.0"
+  }
+}
